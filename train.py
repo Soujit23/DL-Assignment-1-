@@ -60,8 +60,8 @@ config = {
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Deep_LearingAssignment1_CS23M062 -command line arguments")
-    parser.add_argument("-wp","--wandb_project", type=str, default ='Shubhodeep_Final_CS6190_DeepLearing_Assignment1', help="Project name used to track experiments in Weights & Biases dashboard")
-    parser.add_argument("-we","--wandb_entity", type=str, default ='shubhodeepiitm062',help="Wandb Entity used to track experiments in the Weights & Biases dashboard.")
+    parser.add_argument("-wp","--wandb_project", type=str, default ='Soujit Dutta_DeepLearing_Assignment1', help="Project name used to track experiments in Weights & Biases dashboard")
+    parser.add_argument("-we","--wandb_entity", type=str, default ='SoujitDuttaPAI7325',help="Wandb Entity used to track experiments in the Weights & Biases dashboard.")
     parser.add_argument("-d","--dataset",type=str,default ='fashion_mnist',help="dataset choices: [mnist, fashion_mnist]")
     parser.add_argument("-e","--epochs",type=int,default = 5,help ='Number of epochs to train neural network.')
     parser.add_argument("-b","--batch_size",type=int,default = 64,help='Batch size used to train neural network.')
