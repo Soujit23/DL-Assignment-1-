@@ -159,13 +159,13 @@ class Arithmetic :
             v[i] = v[i] - (eta * dv[i])
         return v
 
-    def RMSpropSubtract(self,v,dv,lv,eps,eta):     #Update rule : W(t+1) = W(t) + (eta/(sqrt(v) + Epsilon)*delW
+    def RMSpropSubtract(self,v,dv,lv,eps,eta):     #Update rule : W(t+1) = W(t) - (eta/(sqrt(v) + Epsilon)*delW
         for i in range(1,len(v)):
             ueta = eta/(np.sqrt(np.sum(lv[i])) + eps)
             v[i] = v[i] - (ueta * dv[i])
         return v
 
-    def AdamSubtract(self,V,mV_hat,vV_hat,eps,eta):     #Update rule : W(t+1) = W(t) + (eta/(sqrt(v) + Epsilon)*delW
+    def AdamSubtract(self,V,mV_hat,vV_hat,eps,eta):     #Update rule : W(t+1) = W(t) - (eta/(sqrt(v) + Epsilon)*delW
         for i in range(1,len(V)):
             norm = np.linalg.norm(vV_hat[i])
             ueta = eta/(np.sqrt(norm) + eps)
