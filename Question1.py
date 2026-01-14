@@ -9,7 +9,7 @@ wandb.login()
 (x_train, y_train), (x_test, y_test) = fashion_mnist.load_data()
 
 class_names = ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat','Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot']
-wandb.init(project="Shubhodeep_Final_CS6190_DeepLearing_Assignment1",name = "Question 1")
+wandb.init(project="SoujitDuttaPAI7325_DeepLearing_Assignment1",name = "Question 1")
 
 # Create a figure to display the sample images
 plt.figure(figsize=(10, 10))
@@ -34,4 +34,5 @@ wandb.log({"Question 1": wandb.Image(plt)})
 plt.show()
 
 #wandb.log({"Question 1": output_images})
+
 wandb.finish()
