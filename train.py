@@ -109,7 +109,8 @@ sweep_config = {
         "Initialization" : {'values' :['Xavier']}
     }
 }
-sweep_id = wandb.sweep(sweep=sweep_config,project="Shubhodeep_Final_CS6190_DeepLearing_Assignment1")
+sweep_id = wandb.sweep(sweep=sweep_config,project="SoujitDuttaPAI7325_DeepLearing_Assignment1")
 wandb.agent(sweep_id, function=main,count=1) # calls main function for count number of times.
 wandb.finish()
 '''
+
